@@ -71,7 +71,7 @@ describe('Armadillo parser', function () {
       func function_1 (param1: string, param_2: flow, out output_1: flow, output_2:flow) extends BasePrototype;
       func function_2 (param1: string, param_2: flow, out output_1: flow, output_2:flow) as AddValue;
       func function_3 (param1: string, param_2: flow, out output_1: flow, output_2:flow) extends SimpleInterface as ReplaceValue;
-`);
+      `);
       expect(result).to.deep.equal(
         {
           name: 'document',
@@ -101,5 +101,4 @@ describe('Armadillo parser', function () {
       );
     });
   });
-
 });
